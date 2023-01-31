@@ -63,10 +63,12 @@ public class RegisterActivity extends AppCompatActivity {
 
                     if(isValid(password) && isValid(confirmarPassword)){
 
-                        Toast.makeText(getApplicationContext(), "here", Toast.LENGTH_SHORT).show();
-                        if(true){
-                            System.out.println("hereeeeeeeeee");
 
+                        if(password.compareTo(confirmarPassword)==0){
+
+                            Toast.makeText(getApplicationContext(), "Ingresa", Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText(getApplicationContext(), "No coincide contraseña y confirmar contraseña@", Toast.LENGTH_SHORT).show();
                         }
                     }
                     else{
