@@ -59,15 +59,54 @@ public class RegisterActivity extends AppCompatActivity {
                 return false;
             }
             else{
-                if(password.compareTo(confirmarPassword)==0){
-                    System.out.println("all good-delete");
-                }
-                else{
-                    Toast.makeText(getApplicationContext(), "Contraseña y confirmar contraseña no coinciden.", Toast.LENGTH_SHORT).show();
-                }
+
+
+                    if(isValid(password) && isValid(confirmarPassword)){
+
+                        Toast.makeText(getApplicationContext(), "here", Toast.LENGTH_SHORT).show();
+                        if(true){
+                            System.out.println("hereeeeeeeeee");
+
+                        }
+                    }
+                    else{
+                        Toast.makeText(getApplicationContext(), "La contraseña debe incluir caracteres especiales, letras y dígitos.", Toast.LENGTH_SHORT).show();
+                    }
+
+
+
             }
         }
 
         return true;
+    }
+    public static boolean isValid(String passwordValidate){
+        int f1=0, f2=0, f3=0;
+
+
+            for(int p=0; p<passwordValidate.length();p++){
+                if(Character.isLetter(passwordValidate.charAt(p))){
+                    f1=1;
+                }
+            }
+            for(int r=0; r<passwordValidate.length();r++){
+                if(Character.isDigit(passwordValidate.charAt(r))){
+                    f2=1;
+                }
+
+            }for(int s=0; s<passwordValidate.length();s++){
+                char c=passwordValidate.charAt(s);
+                if(c>=33 && c<=46 || c==64){
+                    f3=1;
+
+                }
+
+            }
+            if(f1==1 && f2==1 && f3==1){
+
+                return true;
+            }
+            return false;
+
     }
 }
