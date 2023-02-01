@@ -3,6 +3,7 @@ package com.example.cerocolas;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -42,10 +43,14 @@ public class RegisterActivity extends AppCompatActivity {
                 String contraseña=edPassword.getText().toString();
                 String confirmarContraseña=edConfirm.getText().toString();
                 Boolean flag= validarRegistro(usuario, email, contraseña, confirmarContraseña);
-                database db=new database (getApplicationContext(), "healthcare", null, 1 );
+
                 if(flag){
+
+                    System.out.println(usuario +" "+email+" "+contraseña);
+                    database db=new database (getApplicationContext(), "ceroCdb", null, 1 );
                     db.register(usuario, email, contraseña);
                     Toast.makeText(getApplicationContext(), "Registro Correcto.", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                 }
                 else{
                     Toast.makeText(getApplicationContext(), "No se creo en base de datos.", Toast.LENGTH_SHORT).show();
@@ -122,4 +127,5 @@ public class RegisterActivity extends AppCompatActivity {
             return false;
 
     }
+
 }
