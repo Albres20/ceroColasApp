@@ -16,6 +16,7 @@ public class RegisterActivity extends AppCompatActivity {
     Button btn;
     TextView ReturnLogin;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +41,15 @@ public class RegisterActivity extends AppCompatActivity {
                 String email=edEmail.getText().toString();
                 String contraseña=edPassword.getText().toString();
                 String confirmarContraseña=edConfirm.getText().toString();
-                validarRegistro(usuario, email, contraseña, confirmarContraseña);
+                Boolean flag= validarRegistro(usuario, email, contraseña, confirmarContraseña);
+                database db=new database (getApplicationContext(), "healthcare", null, 1 );
+                if(flag){
+                    db.register(usuario, email, contraseña);
+                    Toast.makeText(getApplicationContext(), "Registro Correcto.", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "No se creo en base de datos.", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -69,10 +78,12 @@ public class RegisterActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Ingresa", Toast.LENGTH_SHORT).show();
                         }else{
                             Toast.makeText(getApplicationContext(), "No coincide contraseña y confirmar contraseña@", Toast.LENGTH_SHORT).show();
+                            return false;
                         }
                     }
                     else{
                         Toast.makeText(getApplicationContext(), "La contraseña debe incluir caracteres especiales, letras y dígitos.", Toast.LENGTH_SHORT).show();
+                        return false;
                     }
 
 
