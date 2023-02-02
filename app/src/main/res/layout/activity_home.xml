@@ -50,7 +50,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LAB TEST"
+                    android:text="PRUEBA LABORATORIO"
                     android:textAlignment="center"
                     android:textColor="@color/colorRed"
                     android:textStyle="bold"/>
@@ -114,11 +114,11 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/language"/>
+                    android:src="@drawable/chat"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="COMPRAR MEDICINA"
+                    android:text="HALLAR MÉDICO"
                     android:textAlignment="center"
                     android:textColor="@color/colorRed"
                     android:textStyle="bold"/>
@@ -148,11 +148,11 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/language"/>
+                    android:src="@drawable/calendar"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="COMPRAR MEDICINA"
+                    android:text="ARTÍCULOS DE SALUD"
                     android:textAlignment="center"
                     android:textColor="@color/colorRed"
                     android:textStyle="bold"/>
@@ -181,11 +181,11 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/language"/>
+                    android:src="@drawable/widgets"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="COMPRAR MEDICINA"
+                    android:text="DETALLES DE ÓRDEN"
                     android:textAlignment="center"
                     android:textColor="@color/colorRed"
                     android:textStyle="bold"/>
@@ -215,11 +215,11 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/language"/>
+                    android:src="@drawable/info"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="COMPRAR MEDICINA"
+                    android:text="SALIR"
                     android:textAlignment="center"
                     android:textColor="@color/colorRed"
                     android:textStyle="bold"/>
