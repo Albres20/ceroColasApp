@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE); //obtiene un objeto SharedPreferences llamado "shared_prefs". Este objeto permite a la aplicación guardar y recuperar información de configuración que persiste a través de sesiones.
         String username=sharedPreferences.getString("username", "").toString(); //obtiene un valor de la clave "username" almacenada en sharedPreferences y lo almacena en una variable llamada username. Si no se encuentra un valor para la clave "username", se devuelve una cadena vacía.
         Toast.makeText(getApplicationContext(), "Bienvenido"+username, Toast.LENGTH_SHORT).show(); //muestra un mensaje "Bienvenido" seguido del nombre de usuario en una notificación Toast durante un corto período de tiempo.
-
+        //Salir hacia el login
         CardView salir=findViewById(R.id.cardSalir);
         salir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +28,18 @@ public class HomeActivity extends AppCompatActivity {
                 editor.clear();//borrar sesión
                 editor.apply(); //aplicar cambios
                 startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+            }
+        });
+
+        //Hallar doctor
+        CardView hallarDoctor=findViewById(R.id.cardHallarDoctor);
+        hallarDoctor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor editor=sharedPreferences.edit();
+                editor.clear();//borrar sesión
+                editor.apply(); //aplicar cambios
+                startActivity(new Intent(HomeActivity.this, FindDoctorActivity.class));
             }
         });
     }
