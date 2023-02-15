@@ -37,7 +37,7 @@
 
     <ListView
         android:id="@+id/list_item"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
@@ -57,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="0.69"
-
+        android:text="Atras"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

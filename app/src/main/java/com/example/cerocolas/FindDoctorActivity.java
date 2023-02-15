@@ -28,7 +28,7 @@ public class FindDoctorActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it=new Intent(FindDoctorActivity.this, DoctorDetailsActivity.class);
-                it.putExtra("title", "Doctor Familia"); //Envia a otra actividad,la primera es una clave, en este caso "title" La segunda es el valor de la clave, en este caso "Doctor Familia".
+                it.putExtra("title", "Médico de familia"); //Envia a otra actividad,la primera es una clave, en este caso "title" La segunda es el valor de la clave, en este caso "Doctor Familia".
                 startActivity(it);
 
             }
