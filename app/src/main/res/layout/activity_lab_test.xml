@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
-    tools:context=".DoctorDetailsActivity">
+    android:background="@drawable/back2"
+    tools:context=".LabTestActivity">
     <TextView
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
@@ -25,15 +25,29 @@
         android:id="@+id/textDetallesDoctor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Default Text"
+        android:text="Lugar de entrega: Ventanilla"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
         app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/textDetallesDoctor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prueba de laboratorio"
+        android:textColor="@color/yellowLight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.092" />
 
     <ListView
         android:id="@+id/listViewLT"
@@ -49,15 +63,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textDetallesDoctor"
 
         />
+
     <Button
         android:id="@+id/buttonLTBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Atras"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.69"
-        android:text="Atras"
-        />
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonButtonTGoCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir al carrito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

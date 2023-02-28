@@ -2,7 +2,9 @@ package com.example.cerocolas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -73,7 +75,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_doctor_details);
         //Establecer titulo
         tv=findViewById(R.id.textDetallesDoctor);
-        btn=findViewById(R.id.buttonBack);
+        btn=findViewById(R.id.buttonLTBack);
         Intent it=getIntent();
         String title = it.getStringExtra("title");
 
@@ -125,12 +127,23 @@ public class DoctorDetailsActivity extends AppCompatActivity {
             list.add(item);
         }
         sa=new SimpleAdapter(this, list,  R.layout.multi_lines, new String[]{"line1","line2" ,"line3" ,"line4" ,"line5" }, new int[]{R.id.line_a, R.id.line_b, R.id.line_c, R.id.line_d, R.id.line_e} );
-        ListView lst= findViewById(R.id.list_item);
+        ListView lst= findViewById(R.id.listViewLT);
         lst.setAdapter(sa);
         lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //recibir
+                SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE); //obtiene un objeto SharedPreferences llamado "shared_prefs". Este objeto permite a la aplicación guardar y recuperar información de configuración que persiste a través de sesiones.
+                String usuario=sharedPreferences.getString("username", "").toString(); //obtiene un valor de la clave "username" almacenada en sharedPreferences y lo almacena en una variable llamada username. Si no se encuentra un valor para la clave "username", se devuelve una cadena vacía.
+                //enviar
+
+                SharedPreferences.Editor editor=sharedPreferences.edit();
+                editor.putString("username", usuario);
+                editor.apply();
+                System.out.println("-->"+usuario+"<--");
+
+
                 Intent intent= new Intent(DoctorDetailsActivity.this, BoockAppointmentActivity.class);
                 intent.putExtra("text1", title);
                 intent.putExtra("text2", doctor_details[i][0]);
