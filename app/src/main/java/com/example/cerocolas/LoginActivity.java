@@ -22,9 +22,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        edUsuario=findViewById(R.id.editTextUsuario);
-        edContraseña=findViewById(R.id.editTextContraseña);
-        btn=findViewById(R.id.button);
+        edUsuario=findViewById(R.id.editTextLTBFullname);
+        edContraseña=findViewById(R.id.editTextPincode);
+        btn=findViewById(R.id.buttonLTBBooking);
         textView=findViewById(R.id.textView);
 
 

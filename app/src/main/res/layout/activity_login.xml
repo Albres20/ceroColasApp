@@ -26,14 +26,14 @@
         android:id="@+id/imageView"
         android:layout_width="243dp"
         android:layout_height="235dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextUsuario"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLTBFullname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextUsuario"
+        android:id="@+id/editTextLTBFullname"
         android:layout_width="306dp"
         android:layout_height="55dp"
         android:layout_marginTop="276dp"
@@ -55,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLTBBooking"
         android:layout_width="163dp"
         android:layout_height="52dp"
         android:layout_marginTop="40dp"
@@ -63,7 +63,7 @@
         android:text="Ingresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPincode" />
 
     <TextView
         android:id="@+id/textView"
@@ -75,10 +75,10 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLTBBooking" />
 
     <EditText
-        android:id="@+id/editTextContraseña"
+        android:id="@+id/editTextPincode"
         android:layout_width="316dp"
         android:layout_height="54dp"
         android:layout_marginTop="48dp"
@@ -97,6 +97,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUsuario" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBFullname" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

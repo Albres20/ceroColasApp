@@ -19,7 +19,6 @@ import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 public class BoockAppointmentActivity extends AppCompatActivity {
 
@@ -50,7 +49,7 @@ public class BoockAppointmentActivity extends AppCompatActivity {
 
         //botones
         dateButton=findViewById(R.id.buttonAppDate);
-        timeButton=findViewById(R.id.buttonAppTime);
+        timeButton=findViewById(R.id.buttonBMCartDate);
         btnBook=findViewById(R.id.buttonBookAppoinment);
         btnBack=findViewById(R.id.btnBack);
 
@@ -170,5 +169,6 @@ public class BoockAppointmentActivity extends AppCompatActivity {
         timePickerDialog=new TimePickerDialog(this,style, timeSetListener, hrs, mins, true);
         datePickerDialog.getDatePicker().setMinDate(cal.getTimeInMillis()+86400000);
     }
+
 
 }

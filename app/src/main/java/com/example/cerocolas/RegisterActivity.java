@@ -3,7 +3,6 @@ package com.example.cerocolas;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,11 +21,11 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        edUsername=findViewById(R.id.editTextUsuario);
-        edEmail=findViewById(R.id.editTextCorreo);
-        edPassword=findViewById(R.id.editTextContraseña);
-        edConfirm=findViewById(R.id.editTextConfirmarContraseña);
-        btn=findViewById(R.id.button);
+        edUsername=findViewById(R.id.editTextLTBFullname);
+        edEmail=findViewById(R.id.editTextLTBAddress);
+        edPassword=findViewById(R.id.editTextPincode);
+        edConfirm=findViewById(R.id.editTextContact);
+        btn=findViewById(R.id.buttonLTBBooking);
         ReturnLogin=findViewById(R.id.ReturnLogin);
 
         ReturnLogin.setOnClickListener(new View.OnClickListener() {

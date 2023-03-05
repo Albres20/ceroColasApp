@@ -64,5 +64,24 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, LabTestActivity.class));
             }
         });
+        //cardorderdetails
+        CardView orderDetails=findViewById(R.id.cardByMDtent);
+        orderDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(HomeActivity.this, OrdersDetailsActivity.class));
+            }
+        });
+        //comprarMedicinas
+        CardView comprarMedicinas=findViewById(R.id.cardBASe);
+        comprarMedicinas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(HomeActivity.this, BuyMedicineActivity.class));
+            }
+        });
+
     }
 }

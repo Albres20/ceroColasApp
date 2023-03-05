@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back2"
-    tools:context=".LabTestActivity">
+    android:background="@drawable/back1"
+    tools:context=".BuyMedicineActivity">
     <TextView
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
@@ -21,67 +21,60 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.045" />
     <!-- wrap_content" significa que el tamaño se ajustará a los elementos hijos que contiene -->
-    <TextView
-        android:id="@+id/textDetallesDoctor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lugar de entrega: Ventanilla"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitle"
-        app:layout_constraintVertical_bias="0.01999998" />
 
     <TextView
         android:id="@+id/textViewBMCartTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Prueba de laboratorio"
+        android:text="Comprar Medicinas"
         android:textColor="@color/yellowLight"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.049" />
 
     <ListView
         android:id="@+id/listViewBMCart"
-        android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:layout_width="333dp"
+        android:layout_height="414dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDetallesDoctor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMCartTitle"
 
-        />
-
-    <Button
-        android:id="@+id/buttonBMCartBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Atras"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonBMCartCheckout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBMCart"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <Button
+        android:id="@+id/buttonODBack2"
+        android:layout_width="206dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
         android:text="Ir al carrito"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBMCart"
+        app:layout_constraintVertical_bias="0.592" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
