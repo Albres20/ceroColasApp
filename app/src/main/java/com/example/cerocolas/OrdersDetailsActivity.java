@@ -29,8 +29,8 @@ public class OrdersDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orders_details);
 
-        btn= findViewById(R.id.buttonBMCartCheckout);
-        lst=findViewById(R.id.listViewBMCart);
+        btn= findViewById(R.id.buttonHADBack);
+        lst=findViewById(R.id.imageViewCArd);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

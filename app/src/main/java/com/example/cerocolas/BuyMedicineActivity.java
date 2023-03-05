@@ -49,9 +49,9 @@ public class BuyMedicineActivity extends AppCompatActivity {
         setContentView(R.layout.activity_buy_medicine);
 
         list =new ArrayList();
-        btnBack=findViewById(R.id.buttonBMCartCheckout);
+        btnBack=findViewById(R.id.buttonHADBack);
         btnGotoCart=findViewById(R.id.buttonODBack2);
-        lst = findViewById(R.id.listViewBMCart);
+        lst = findViewById(R.id.imageViewCArd);
 
         btnGotoCart.setOnClickListener(new View.OnClickListener() {
             @Override

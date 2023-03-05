@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".LabTestBookActivity">
-
+    android:background="@drawable/back1"
+    tools:context=".BuyMedicineBookActivity">
     <EditText
         android:id="@+id/editTextLBMBAddress"
         android:layout_width="306dp"

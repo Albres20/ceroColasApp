@@ -54,9 +54,9 @@ public class LabTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test);
 
-        btnGoToCart = findViewById(R.id.buttonBMCartCheckout);
+        btnGoToCart = findViewById(R.id.buttonHADBack);
         BtnBack = findViewById(R.id.buttonBMCartBack);
-        listView = findViewById(R.id.listViewBMCart);
+        listView = findViewById(R.id.imageViewCArd);
 
         BtnBack.setOnClickListener(new View.OnClickListener() {
             @Override

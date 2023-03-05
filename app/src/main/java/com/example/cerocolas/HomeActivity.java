@@ -83,5 +83,15 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        //cardByMeDine
+        CardView cardByMeDine=findViewById(R.id.cardByMeDine);
+        cardByMeDine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(HomeActivity.this, HealthArticlesActivity.class));
+            }
+        });
+
     }
 }

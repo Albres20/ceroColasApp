@@ -7,7 +7,7 @@
     android:background="@drawable/back2"
     tools:context=".LabTestActivity">
     <TextView
-        android:id="@+id/textTitle"
+        android:id="@+id/textHATitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cero Colas"
@@ -32,11 +32,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textHATitle"
         app:layout_constraintVertical_bias="0.01999998" />
 
     <TextView
-        android:id="@+id/textViewBMCartTitle"
+        android:id="@+id/textViewHADTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prueba de laboratorio"
@@ -46,11 +46,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textHATitle"
         app:layout_constraintVertical_bias="0.092" />
 
     <ListView
-        android:id="@+id/listViewBMCart"
+        android:id="@+id/imageViewCArd"
         android:layout_width="350dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"
@@ -68,14 +68,14 @@
         android:id="@+id/buttonBMCartBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Atras"
+        android:text="Atrás"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonBMCartCheckout"
+        android:id="@+id/buttonHADBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ir al carrito"

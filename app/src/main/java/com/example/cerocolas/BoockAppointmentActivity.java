@@ -116,8 +116,18 @@ public class BoockAppointmentActivity extends AppCompatActivity {
                 //calendar.set(Calendar.MINUTE, timePickerDialog.getTimePicker().getCurrentMinute());
                 System.out.println("-->fecha: "+fechaString);
                 System.out.println("hora"+"-->"+hora);
-                db.registerCita(idUser, medico, direccion, celular, tarifa, "", "");
-                Toast.makeText(getApplicationContext(), "Registro Correcto.", Toast.LENGTH_SHORT).show();
+
+                if(db.checkAppointmentExists(username, title+" => "+fullname, address, contact, dateButton.getText().toString(), timeButton.getText().toString())==1){
+                    Toast.makeText(getApplicationContext(), "Reserva de cita ya realizada...", Toast.LENGTH_LONG).show();
+
+                }else{
+                    System.out.println("prueba");
+                    //db.registerCita(idUser, medico, direccion, celular, tarifa, "", "");
+                    db.addOrder(username, title+" => "+fullname, address, contact,0, dateButton.getText().toString(), timeButton.getText().toString(), Float.parseFloat(fees), "Cita");
+                    Toast.makeText(getApplicationContext(), "Registro Correcto.", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(BoockAppointmentActivity.this, HomeActivity.class));
+                }
+
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -127,12 +137,12 @@ public class BoockAppointmentActivity extends AppCompatActivity {
             }
         });
 
-        btnBook.setOnClickListener(new View.OnClickListener() {
+       /* btnBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(BoockAppointmentActivity.this, HomeActivity.class));
             }
-        });
+        });*/
     }
     private void initDatePicker(){
         DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
