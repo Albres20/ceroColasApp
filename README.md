@@ -21,9 +21,10 @@ Aplicación movil orientado a facilitar el proceso de selección de citas, ver m
 
 Cómo utilizar tu proyecto y ejemplos de código.
 
-## Contribución
+## Documentación
 
-Cómo otras personas pueden contribuir a tu proyecto.
+[Informe final_App Cero Colas _G6.docx](https://github.com/Albres20/ceroColasApp/files/12623722/Informe.final_App.Cero.Colas._G6.docx)
+
 
 ## Licencia
 
