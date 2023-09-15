@@ -5,7 +5,9 @@ Aplicación movil orientado a facilitar el proceso de selección de citas, ver m
    <img src="https://github.com/Albres20/ceroColasApp/assets/83229699/92a03104-3264-441f-9740-cf053d4343f2" alt="Loco CeroColasApp" width="150" height="150" />
 
 </p>
- 
+ ![logo](https://github.com/Albres20/ceroColasApp/assets/83229699/9674f645-e95b-45d9-8ccd-4bd661e6f425)
+
+
 ## Instalación
 ##Instrucciones para instalar y configurar tu proyecto.
 
