@@ -25,6 +25,7 @@ Cómo utilizar tu proyecto y ejemplos de código.
 
 [Informe final_App Cero Colas _G6.docx](https://github.com/Albres20/ceroColasApp/files/12623722/Informe.final_App.Cero.Colas._G6.docx)
 
+[Sprint Backlog CeroColasApp.xlsx](https://github.com/Albres20/ceroColasApp/files/12623734/Sprint.Backlog.CeroColasApp.xlsx)
 
 ## Licencia
 
