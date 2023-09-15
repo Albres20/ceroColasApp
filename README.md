@@ -1,5 +1,7 @@
 # ceroColasApp
 Aplicación movil orientado a facilitar el proceso de selección de citas, ver medicamentos.
+![logo](https://github.com/Albres20/ceroColasApp/assets/83229699/92a03104-3264-441f-9740-cf053d4343f2)
+
 ## Instalación
 
 Instrucciones para instalar y configurar tu proyecto.
